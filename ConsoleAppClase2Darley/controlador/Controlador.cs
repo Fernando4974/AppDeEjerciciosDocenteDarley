@@ -1,4 +1,5 @@
 ﻿using ConsoleAppClase2Darley.modelo;
+using ConsoleAppClase2Darley.modelo.CondicionesyCiclos;
 using ConsoleAppClase2Darley.vista;
 using Google.Protobuf.WellKnownTypes;
 using System;
@@ -20,7 +21,7 @@ namespace ConsoleAppClase2Darley.controlador
         string entradaString = "";
         int entradaNum = 0;
         //uso eje obj de tipo eje1 para usar su metodo de validacion (debo crearle el metodo al controlador)
-        Ejercicio ejercicioSeleccionado = new Ejercicio1();
+        Ejercicio ejercicioSeleccionado = new modelo.CondicionesyCiclos.Ejercicio1();
         public void ControladorPrincipal(int opcion) {
 
         
@@ -38,13 +39,19 @@ namespace ConsoleAppClase2Darley.controlador
                         entradaNum = int.Parse(entradaString);
 
                         switch (entradaNum) {
-                            //"1", "Número de 1 o 2 dígitos" 
-                            case 1:
+                           
+                            case 1: //"1", "Número de 1 o 2 dígitos" 
+
+                                ejercicioSeleccionado.Encabezado(entradaNum);
                                 ejercicioSeleccionado.Ejecutar();
                                 break;
 
-                            case 2:
-                                ejercicioSeleccionado.Ejecutar();
+                            
+                            case 2: // "2" "Mayor y menor de 3 numeros"
+
+                                Ejercicio objEje2 = new Ejercicio2();
+                               objEje2.Encabezado(entradaNum);
+                               objEje2.Ejecutar();
                                 break;
 
                         

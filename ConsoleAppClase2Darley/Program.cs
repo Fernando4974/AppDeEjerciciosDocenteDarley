@@ -1,5 +1,6 @@
 ﻿using ConsoleAppClase2Darley.controlador;
 using ConsoleAppClase2Darley.modelo;
+using ConsoleAppClase2Darley.modelo.CondicionesyCiclos;
 using ConsoleAppClase2Darley.vista;
 string entradaString = "";
 bool iniciado = false;
@@ -12,7 +13,7 @@ Menu objMostrarMenu = new Menu();
 do
 {
     iniciado = true;
-    Ejercicio objValidarEntrada= new Ejercicio1();
+    Ejercicio objValidarEntrada = new ConsoleAppClase2Darley.modelo.CondicionesyCiclos.Ejercicio1();
 
       
     objMostrarMenu.MostarCarpetas();

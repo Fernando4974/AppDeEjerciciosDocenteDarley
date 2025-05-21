@@ -8,6 +8,11 @@ namespace ConsoleAppClase2Darley.modelo
 {
     public abstract class Ejercicio
     {
+        //variable comunes, abajo estan los get:set
+       public static int num1;
+       public static int num2;
+       public static int num3;
+
         public abstract void Ejecutar();
 
         public void Encabezado(int opcion)
@@ -88,6 +93,81 @@ namespace ConsoleAppClase2Darley.modelo
                         "------------------------------------------------------------\n";
             return mensaje;
 
+       ;
+            }
+
+        public int[] llenarArreglo(int tamaño, string entrada)
+        {
+            string datoNoValidado;
+            int datoValidado;
+            
+            int[] arregloLleno= new int[tamaño];
+            for (int i = 0; i < arregloLleno.Length; i++)
+            {
+                Console.WriteLine(entrada);
+                datoNoValidado = Console.ReadLine();
+                if (validarEntero(datoNoValidado))
+                {
+                    datoValidado = int.Parse(datoNoValidado);
+                    arregloLleno[i] = datoValidado;
+
+                }
+                else { i--; }
+            }
+
+
+
+            return arregloLleno;
+        }
+
+        public bool validarEntero(string dato)
+        {
+            int datoValidado = 0;
+            bool validar = false;
+
+            if (int.TryParse(dato, out datoValidado))
+            {
+                validar = true;
+
+            }
+            else
+            {
+                Console.WriteLine("Error en la validacion");
+                validar = false;
+            }
+
+            return validar;
+        }
+            //GET:SET dejar hasta el fondo >>>
+            public int getNum1()
+        {
+
+            return num1;
+        }
+        public int getNum2()
+        {
+
+            return num2;
+        }
+        public int getNum3()
+        {
+
+            return num1;
+        }
+        public void setNum1(int num)
+        {
+
+            num1 = num;
+        }
+        public void setNum2(int num)
+        {
+
+            num2 = num;
+        }
+        public void setNum3(int num)
+        {
+
+            num3 = num;
         }
     }
 }
