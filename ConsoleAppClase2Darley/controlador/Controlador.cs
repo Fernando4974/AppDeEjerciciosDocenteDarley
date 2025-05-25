@@ -54,7 +54,23 @@ namespace ConsoleAppClase2Darley.controlador
                                objEje2.Ejecutar();
                                 break;
 
-                        
+                            case 3:// Contador de 2 en 2 (pureba File.ReadAllLines)
+                                Ejercicio objEje3 = new Ejercicio3();
+                                objEje3.Encabezado(entradaNum);
+                                objEje3.Ejecutar();
+
+                                break;
+                            case 4://de o a -100
+                                Ejercicio objEje4 = new Ejercicio4();
+                                objEje4.Encabezado(entradaNum);
+                                objEje4.Ejecutar();
+                                break ;
+                            case 5:
+                                Ejercicio objEje5 = new Ejercicio5();
+                                objEje5.Encabezado(entradaNum);
+                                objEje5.Ejecutar();
+
+                                break;
                         }
                     }
                     else { Menu.datoInvalido(); }

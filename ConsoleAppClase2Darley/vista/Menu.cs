@@ -28,14 +28,23 @@ namespace ConsoleAppClase2Darley.vista
 
         };
 
-        public string[,] ListaCarpetas = new string[,] {
+        public static string[,] ListaCarpetas = new string[,] {
 
-            { "1", "Condiciones y Ciclos" },
-            { "No Asigned"," No Asigned"}
+
+         { "1", "Condiciones y Ciclos"},
+            { "2"," Arreglos"},
+            {"3","Siwtch Case" }
+
+        };
+
+           
 
         
-        };
+        
+
+        
         public static void Inicio(){
+            
             Console.WriteLine("----------------------------------------------------------------------------");
             Console.WriteLine("----------------------------------------------------------------------------");
             Console.WriteLine("------------------------- Ejercicios Propuestos C# -------------------------");

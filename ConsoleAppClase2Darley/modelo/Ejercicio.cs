@@ -138,6 +138,19 @@ namespace ConsoleAppClase2Darley.modelo
 
             return validar;
         }
+        //funcion ver codigo (cambiar la ruta) (solo funciona para eje 3)
+        public void verCodigoFuente() {
+
+            string ruta = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "C:\\Users\\Fertch\\source\\repos\\ConsoleAppClase2Darley\\ConsoleAppClase2Darley\\modelo\\CondicionesyCiclos\\Ejercicio3.cs");
+            string[] lineas = File.ReadAllLines(ruta);
+            foreach (string line in lineas)
+            {
+                Console.WriteLine(line);
+
+            }
+            Console.ReadLine();
+        }
+
             //GET:SET dejar hasta el fondo >>>
             public int getNum1()
         {

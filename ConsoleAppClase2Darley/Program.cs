@@ -17,10 +17,11 @@ do
 
       
     objMostrarMenu.MostarCarpetas();
-    
-
     entradaString = Console.ReadLine();
-    if (objValidarEntrada.ValidarEnteroPositivo(entradaString))
+
+
+
+    if (objValidarEntrada.ValidarEnteroPositivo(entradaString)==true)
     {
         entradaNum = int.Parse(entradaString);
         controlador.ControladorPrincipal(entradaNum);
