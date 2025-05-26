@@ -71,6 +71,11 @@ namespace ConsoleAppClase2Darley.controlador
                                 objEje5.Ejecutar();
 
                                 break;
+                            case 6:
+                                Ejercicio objEje6 = new Ejercicio6();
+                                objEje6.Encabezado(entradaNum);
+                                objEje6.Ejecutar();
+                                break;
                         }
                     }
                     else { Menu.datoInvalido(); }
