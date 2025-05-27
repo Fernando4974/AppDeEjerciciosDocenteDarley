@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace ConsoleAppClase2Darley.vista
 {
     internal class Menu
-    {
+    {//Carpeta Condiciones y ciclos
         public string[,] ListaEjercicios1 = new string[15, 2] {
 
     { "1", "Número de 1 o 2 dígitos" },
@@ -17,23 +17,39 @@ namespace ConsoleAppClase2Darley.vista
     { "5", "Promedio de 3 estudiantes (4 notas)" },
     { "6", "Contraseña hasta acertar (1111)" },
     { "7", "Calculador de cuadrados (while)" },
-    { "8", "Pares del 256 al -132 (while)" },
-    { "9", "Adivinar número (3 intentos)" },
-    { "10", "Suma de impares del 300 al 400" },
-    { "11", "Pagos crecientes por 20 meses" },
-    { "12", "Triángulo de números" },
-    { "13", "Imprimir 1 al 100 con 'PUMM!!'" },
-    { "14", "Votación entre 3 candidatos" },
-    { "15", "Operar según el valor de entrada" }
+    { "8", "( UNDEVELOPED!! )Pares del 256 al -132 (while)" },
+    { "9", "( UNDEVELOPED!! )Adivinar número (3 intentos)" },
+    { "10", "( UNDEVELOPED!! )Suma de impares del 300 al 400" },
+    { "11", "( UNDEVELOPED!! )Pagos crecientes por 20 meses" },
+    { "12", "( UNDEVELOPED!! )Triángulo de números" },
+    { "13", "( UNDEVELOPED!! )Imprimir 1 al 100 con 'PUMM!!'" },
+    { "14", "( UNDEVELOPED!! )Votación entre 3 candidatos" },
+    { "15", "( UNDEVELOPED!! )Operar según el valor de entrada" }
 
         };
+
+        // Carpeta ejercicio Funfiones y procedimientos
+        public string[,] ListaEjercicios2 = new string[,]
+        {
+    { "1", "Multiplicación de dos números con funciones" },
+    { "2", "( UNDEVELOPED!! )Mostrar números del 1 al 100 con método" },
+    { "3", "( UNDEVELOPED!! )Calculadora con switch y funciones" },
+    { "4", "( UNDEVELOPED!! )Cuadrado de un número usando función" },
+    { "5", "( UNDEVELOPED!! )Comparar dos números con método" },
+    { "6", "( UNDEVELOPED!! )Mayor y menor entre tres números distintos" },
+    { "7", "( UNDEVELOPED!! )Promedio de notas hasta ingresar cero" },
+    { "8", "Cálculo de nómina para 10 obreros (horas extra)" }
+
+
+        };
+        //lista carpetas
 
         public static string[,] ListaCarpetas = new string[,] {
 
 
          { "1", "Condiciones y Ciclos"},
-            { "2"," Arreglos"},
-            {"3","Siwtch Case" }
+            { "2"," Funciones y Procedimientos"},
+            {"3"," ( UNDEVELOPED!! )Siwtch Case" }
 
         };
 

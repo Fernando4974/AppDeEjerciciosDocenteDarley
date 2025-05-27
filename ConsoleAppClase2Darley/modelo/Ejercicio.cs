@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Org.BouncyCastle.Asn1.Mozilla;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -119,26 +120,34 @@ namespace ConsoleAppClase2Darley.modelo
 
             return arregloLleno;
         }
+        //multiplicar
+        public int multiplicar2Enteros(int n1, int n2)
+        {
+                 return n1 * n2;
+        }
+
 
         public bool validarEntero(string dato)
         {
-            int datoValidado = 0;
-            bool validar = false;
 
-            if (int.TryParse(dato, out datoValidado))
+          
+
+            if (int.TryParse(dato, out int datoValidado))
             {
-                validar = true;
+                return  true;
 
-            }
-            else
+            }else
+            
             {
                 Console.WriteLine("Error en la validacion");
-                validar = false;
+               
+                Console.ReadLine();
+                return false;
             }
 
-            return validar;
+            
         }
-        //funcion ver codigo (cambiar la ruta) (solo funciona para eje 3)
+        //funcion ver codigo (cambiar la ruta) (solo funciona para eje 3 / condiciones y ciclos)
         public void verCodigoFuente() {
 
             string ruta = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "C:\\Users\\Fertch\\source\\repos\\ConsoleAppClase2Darley\\ConsoleAppClase2Darley\\modelo\\CondicionesyCiclos\\Ejercicio3.cs");
