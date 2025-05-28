@@ -38,7 +38,11 @@ namespace ConsoleAppClase2Darley.vista
     { "5", "( UNDEVELOPED!! )Comparar dos números con método" },
     { "6", "( UNDEVELOPED!! )Mayor y menor entre tres números distintos" },
     { "7", "( UNDEVELOPED!! )Promedio de notas hasta ingresar cero" },
+<<<<<<< HEAD
     { "8", "Cálculo de nómina para 10 obreros (horas extra)" }
+=======
+    { "8", "( UNDEVELOPED!! )Cálculo de nómina para 10 obreros (horas extra)" }
+>>>>>>> 6b6aa89b30adc3940ca973537af50a0bef73f010
 
 
         };

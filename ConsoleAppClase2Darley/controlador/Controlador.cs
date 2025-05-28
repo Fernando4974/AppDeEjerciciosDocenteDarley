@@ -109,11 +109,15 @@ namespace ConsoleAppClase2Darley.controlador
 
                                 break;
 
+<<<<<<< HEAD
                             case 8://nomina 10 obreros
                                 Ejercicio objEje8 = new modelo.FuncionesyProcedimientos.Ejercicio8();
                                 objEje8.Encabezado(entradaNum);
                                 objEje8.Ejecutar();
                                 break;
+=======
+
+>>>>>>> 6b6aa89b30adc3940ca973537af50a0bef73f010
                         }
                          }
 
