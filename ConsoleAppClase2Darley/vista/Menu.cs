@@ -38,12 +38,18 @@ namespace ConsoleAppClase2Darley.vista
     { "5", "( UNDEVELOPED!! )Comparar dos números con método" },
     { "6", "( UNDEVELOPED!! )Mayor y menor entre tres números distintos" },
     { "7", "( UNDEVELOPED!! )Promedio de notas hasta ingresar cero" },
-<<<<<<< HEAD
-    { "8", "Cálculo de nómina para 10 obreros (horas extra)" }
-=======
-    { "8", "( UNDEVELOPED!! )Cálculo de nómina para 10 obreros (horas extra)" }
->>>>>>> 6b6aa89b30adc3940ca973537af50a0bef73f010
+    { "8", "Cálculo de nómina para 10 obreros (horas extra)" },
+    { "9", "Calculadora En Clases" },
+    { "10", "Tercer Vector Reprobados"},
+    { "11", "Vector 125"},
+     { "12", "Vector N"}
+        };
 
+
+        // Carpeta de apis
+        public string[,] ListaApis = new string[,]
+        {
+             { "1 GET", "https:/jsonplaceholder.typicode.com/posts/1"}
 
         };
         //lista carpetas
@@ -53,7 +59,7 @@ namespace ConsoleAppClase2Darley.vista
 
          { "1", "Condiciones y Ciclos"},
             { "2"," Funciones y Procedimientos"},
-            {"3"," ( UNDEVELOPED!! )Siwtch Case" }
+            {"3"," Respuestas de Apis" }
 
         };
 

@@ -25,6 +25,7 @@ namespace ConsoleAppClase2Darley.modelo
               "------------------- Problema planteado: --------------------\n" +
              "------------------------------------------------------------\n");
         }
+        public void Encabezado() { }
         public bool ValidarEnteroPositivo(string numero)
         {
             bool valido = false;
@@ -87,6 +88,15 @@ namespace ConsoleAppClase2Darley.modelo
             
             return salida;
         }
+        public string[] llenarArreglosYaCreados(string[] arreglo, int diferencial)
+        {
+
+            for (int i = 0; i < arreglo.Length; i++)
+            {
+                arreglo[i] = $"0000{i + diferencial}";
+            }
+            return arreglo;
+        }
         public string Respuesta() {
 
             string mensaje="------------------------------------------------------------\n" +
@@ -97,6 +107,7 @@ namespace ConsoleAppClase2Darley.modelo
        ;
             }
 
+        //funcion llenar arreglo, pide tamaño y pide cada valor de cada posicion
         public int[] llenarArreglo(int tamaño, string entrada)
         {
             string datoNoValidado;

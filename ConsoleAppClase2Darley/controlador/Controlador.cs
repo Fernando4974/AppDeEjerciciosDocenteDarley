@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ConsoleAppClase2Darley.modelo.Apis;
 
 namespace ConsoleAppClase2Darley.controlador
 {
@@ -101,7 +102,7 @@ namespace ConsoleAppClase2Darley.controlador
                     if (ejercicioSeleccionado.ValidarEnteroPositivo(entradaString))
                     {
                         entradaNum = int.Parse(entradaString);
-                        switch (entradaNum) { 
+                        switch (entradaNum) {
                             case 1://Multiplicación de dos números con funciones
                                 Ejercicio objEje1 = new modelo.FuncionesyProcedimientos.Ejercicio1();
                                 objEje1.Encabezado(entradaNum);
@@ -109,20 +110,59 @@ namespace ConsoleAppClase2Darley.controlador
 
                                 break;
 
-<<<<<<< HEAD
+
                             case 8://nomina 10 obreros
                                 Ejercicio objEje8 = new modelo.FuncionesyProcedimientos.Ejercicio8();
                                 objEje8.Encabezado(entradaNum);
                                 objEje8.Ejecutar();
                                 break;
-=======
 
->>>>>>> 6b6aa89b30adc3940ca973537af50a0bef73f010
+                            case 9://calculadore clase
+                                Ejercicio objCal = new Calculadora();
+                                objCal.Encabezado(entradaNum);
+                                objCal.Ejecutar();
+                                break;
+                            case 10://tecer vector reprobados
+                                Ejercicio objEjeTercer = new EjercicioVectorC();
+                                objEjeTercer.Encabezado(entradaNum);
+                                objEjeTercer.Ejecutar();
+                                break;
+
+                            case 11: // vector 125
+
+                                Ejercicio objVec125= new EjercicioVector125();
+                                objVec125.Encabezado(entradaNum);
+                                objVec125.Ejecutar();
+
+                                break;
+
+                            case 12://vector N
+                                Ejercicio ejeVectN= new EjercicioVectorN();
+                                ejeVectN.Encabezado(entradaNum);
+                                ejeVectN.Ejecutar();
+                                break;
                         }
                          }
 
                         break;
+                case 3:
+                    objListar.MostrarMenuEjercicios(objListar.ListaApis);
+                    entradaString = Console.ReadLine();
+                    if (ejercicioSeleccionado.ValidarEnteroPositivo(entradaString))
+                    {
+                        entradaNum= int.Parse(entradaString);
+                        switch (entradaNum)
+                        {
+                            case 1:
+                                Ejercicio EjeApi1 = new modelo.Apis.EjercicioApi1();
+                                EjeApi1.Encabezado(entradaNum);
+                                EjeApi1.Ejecutar();
+                                break;
+                        }
 
+                    }
+                    else { ejercicioSeleccionado.DatoInvalido(); }
+                    break;
 
                         
             }
